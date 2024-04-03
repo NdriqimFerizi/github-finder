@@ -54,8 +54,8 @@ const getUserRepos = async (login) => {
 
     const response = await fetch(`${GITHUB_URL}/search/users?${login}/repos?${params}`, 
     { 
-    headers: {
-        Authorization: `token ${GITHUB_TOKEN}`}
+        headers: {
+            Authorization: `token ${GITHUB_TOKEN}`}
     })
 
     const data = await response.json()
